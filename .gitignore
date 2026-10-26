@@ -1,0 +1,7 @@
+# Ignorar de Visual Studio (API)
+bin/
+obj/
+.vs/
+
+# Ignorar de Expo (Frontend)
+node_modules/

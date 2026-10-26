@@ -1,0 +1,6 @@
+@Bar_HostAddress = http://localhost:5120
+
+GET {{Bar_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
