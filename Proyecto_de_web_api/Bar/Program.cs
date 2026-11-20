@@ -10,6 +10,33 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<ICategoria, Categoriarepository>();
 builder.Services.AddScoped<CategoriaServices>();
 
+builder.Services.AddScoped<IDetalle_Comanda, Detalle_Comandarepository>();
+builder.Services.AddScoped<Detalle_ComandaService>();
+
+builder.Services.AddScoped<IDireccion, Direccionrepository>();
+builder.Services.AddScoped<DireccionService>();
+
+builder.Services.AddScoped<IFactura, Facturarepository>();
+builder.Services.AddScoped<FacturaService>();
+
+builder.Services.AddScoped<IKardex, Kardexrepository>();
+builder.Services.AddScoped<KardexService>();
+
+builder.Services.AddScoped<IMesa, Mesarepository>();
+builder.Services.AddScoped<MesaService>();
+
+builder.Services.AddScoped<IProducto, Productorepository>();
+builder.Services.AddScoped<ProductoService>();
+
+builder.Services.AddScoped<ITipo_de_Cuenta, Tipo_de_Cuentarepository>();
+builder.Services.AddScoped<Tipo_de_CuentaService>();
+
+builder.Services.AddScoped<IUsuario, Usuariorepository>();
+builder.Services.AddScoped<UsuarioService>();
+
+builder.Services.AddScoped<IZona, Zonarepository>();
+builder.Services.AddScoped<ZonaService>();
+
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
