@@ -7,6 +7,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddScoped<IAsiento_Contable, Asiento_Contablerepository>();
+builder.Services.AddScoped<Asiento_ContableService>();
+
+builder.Services.AddScoped<ICliente, Clienterepository>();
+builder.Services.AddScoped<ClienteServices>();
+
 builder.Services.AddScoped<ICategoria, Categoriarepository>();
 builder.Services.AddScoped<CategoriaServices>();
 
